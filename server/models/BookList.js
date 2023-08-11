@@ -1,22 +1,35 @@
 const mongoose = require('mongoose');
 
 const ReadingListSchema = new mongoose.Schema({
-  user: {
-    type: mongoose.Schema.Types.ObjectId, 
-    ref: 'User'
+  user: { 
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
   },
+
   books: [
     {
-      bookId: {
-        type: String,
+      book: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Book',
         required: true
       },
-      title: {
+      dateAdded: {
+        type: Date,
+        default: Date.now
+      },
+      thoughts: {
         type: String
       },
-      author: {
-        type: String  
-      } 
+      status: {
+        type: String,
+        enum: ['In Progress', 'Completed']
+      },
+      rating: {
+        type: Number,
+        min: 1,
+        max: 5
+      }
     }
   ]
 });

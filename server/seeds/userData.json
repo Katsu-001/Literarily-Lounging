@@ -1,0 +1,32 @@
+[
+    {
+      "username": "john123", 
+      "email": "john@email.com",
+      "password": "password123"
+    },
+    {
+      "username": "jane456",
+      "email": "jane@email.com",  
+      "password": "password456"
+    },
+    {
+      "username": "bob789",
+      "email": "bob@email.com",
+      "password": "password789"
+    },
+    {
+      "username": "sarah101112",
+      "email": "sarah@email.com",
+      "password": "password101112"
+    },
+    {
+      "username": "mike131415",
+      "email": "mike@email.com",
+      "password": "password131415"
+    },
+    {
+      "username": "liz161718",
+      "email": "liz@email.com",
+      "password": "password161718"
+    }
+]

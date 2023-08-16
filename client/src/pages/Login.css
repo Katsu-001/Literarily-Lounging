@@ -40,6 +40,12 @@
     font-weight: bold;
     font-style: italic;
 }
+#email {
+    height: 40px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
 #username {
     height: 40px;
     border-radius: 15px;
@@ -57,4 +63,14 @@
     width: 100px;
     height: 30px;
     border-radius: 5px;
+}
+.login-container div span {
+    font-size: 32px;
+    padding-top: 110px;
+    align-self: center;
+    color: white;
+}
+.login-container div span:hover {
+    scale: 105%;
+    color: rgb(193, 193, 193);
 }

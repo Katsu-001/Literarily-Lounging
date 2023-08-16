@@ -1,27 +1,25 @@
 import React from 'react';
 import './Login.css';
 
-const Login = ({ currentPage, setCurrentPage}) => {
+const Signup = () => {
   return (
     <div className="page-container">
       <div className="login-container">
         <span>Literarily Lounging</span>
-        <span>Login Page</span>
+        <span>SignUp Page</span>
         <div>
-          <label for="username">Username or Email:</label>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email"></input>
+          <label for="username">Username:</label>
           <input type="text" id="username" name="username"></input>
           <label for="password">Password:</label>
           <input type="text" id="password" name="password"></input>
-          <input type="submit" value="Submit" className="submitBut"></input>
-          <span 
-            className={currentPage === 'signup' ? 'active' : ''}
-            onClick={() => setCurrentPage('signup')}>
-            Signup
-        </span>
+          <input type="submit" value="Submit" className="submitBut"
+          ></input>
         </div>
       </div>
     </div>  
   );
-};
+}
 
-export default Login;
+export default Signup;

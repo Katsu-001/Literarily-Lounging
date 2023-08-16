@@ -18,7 +18,7 @@ const client = new ApolloClient({
 });
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState('login');
+  const [currentPage, setCurrentPage] = useState('home');
 
   const handleSetCurrentPage = (page) => {
     setCurrentPage(page);

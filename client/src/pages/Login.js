@@ -13,10 +13,10 @@ const Login = ({ currentPage, setCurrentPage}) => {
           <label for="password">Password:</label>
           <input type="text" id="password" name="password"></input>
           <input type="submit" value="Submit" className="submitBut"></input>
-          <span 
+          <span
             className={currentPage === 'signup' ? 'active' : ''}
             onClick={() => setCurrentPage('signup')}>
-            Signup
+            SignUp Page
         </span>
         </div>
       </div>

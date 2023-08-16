@@ -7,42 +7,50 @@ import Footer from './components/Footer/index.js';
 
 //different pages to be loaded
 import Home from './pages/Home';
-import Search from './pages/List.js';
+import List from './pages/List.js';
 import Comments from './pages/Comments';
 import Login from './pages/Login';
+import Signup from './pages/Signup.js';
 
 const client = new ApolloClient({
   uri: '/graphql',
   cache: new InMemoryCache(),
 });
 
-function App() {
-  // Looks to see which page is the current
-  const [currentPage, setCurrentPage] = useState('login'); // Default page to home
-  const renderPage = () => {
-    if (currentPage === 'home') {
-      return <Home />;
+const App = () => {
+  const [currentPage, setCurrentPage] = useState('login');
+
+  const handleSetCurrentPage = (page) => {
+    setCurrentPage(page);
+  }
+
+  const renderPage = () => { 
+    if(currentPage === 'home') {
+      return <Home setCurrentPage={handleSetCurrentPage} />
     }
-    if (currentPage === 'list') {
-      return <Search />;  
+    if(currentPage === 'list') {
+      return <List setCurrentPage={handleSetCurrentPage} />
     }
-    if (currentPage === 'comments') {
-      return <Comments />;
+    if(currentPage === 'comments') {
+      return <Comments setCurrentPage={handleSetCurrentPage} />
     }
-    if (currentPage === 'login') {
-      return <Login />;
+    if(currentPage === 'login') {
+      return <Login setCurrentPage={handleSetCurrentPage} />
     }
-  };
+    if(currentPage === 'signup') {
+      return <Signup setCurrentPage={handleSetCurrentPage} />
+    }
+  }
 
   return (
     <ApolloProvider client={client}>
       <div>
         <Navbar 
           currentPage={currentPage}
-          setCurrentPage={setCurrentPage}  
+          setCurrentPage={handleSetCurrentPage} 
         />
         <div>
-          {renderPage()}
+          {renderPage()}  
         </div>
         <Footer />
       </div>

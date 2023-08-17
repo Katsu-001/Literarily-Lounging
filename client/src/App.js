@@ -4,6 +4,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 // on every page
 import Navbar from './components/Navbar/index.js';
 import Footer from './components/Footer/index.js';
+//import Livechat from './components/Livechat/index.js';
 
 //different pages to be loaded
 import Home from './pages/Home';
@@ -11,6 +12,7 @@ import List from './pages/List.js';
 import Comments from './pages/Comments';
 import Login from './pages/Login';
 import Signup from './pages/Signup.js';
+import Livechat from './components/Livechat/index.js';
 
 const client = new ApolloClient({
   uri: '/graphql',
@@ -18,7 +20,7 @@ const client = new ApolloClient({
 });
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState('home');
+  const [currentPage, setCurrentPage] = useState('login');
 
   const handleSetCurrentPage = (page) => {
     setCurrentPage(page);
@@ -53,6 +55,7 @@ const App = () => {
           {renderPage()}  
         </div>
         <Footer />
+        <Livechat />
       </div>
     </ApolloProvider>
   );

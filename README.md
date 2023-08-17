@@ -27,5 +27,5 @@ NA
 
 ## Questions
 * Git HUb: https://github.com/Katsu-001/Literarily-Lounging
-* Deployed Link: 
+* Deployed Link: https://literarily-lounging-6799a3854a8f.herokuapp.com/
 

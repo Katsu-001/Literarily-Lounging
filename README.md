@@ -3,6 +3,7 @@
 ## Table of Contents
 - [Descriptio](#description)
 - [API's](#api's)
+- [Screenshots](#screenshots)
 - [License](#license)
 - [Contributing](#contributing)
 - [Questions](#questions)
@@ -14,6 +15,8 @@ As a reader I would like to create account on a reading platform to document the
 * Google Books
 * Socket.IO
 
+## Screenshots
+
 ## License
 NA
 
@@ -24,4 +27,5 @@ NA
 
 ## Questions
 * Git HUb: https://github.com/Katsu-001/Literarily-Lounging
+* Deployed Link: 
 

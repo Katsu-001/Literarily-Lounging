@@ -1,8 +1,8 @@
 # literarily-lounging
 
 ## Table of Contents
-- [Descriptio](#description)
-- [Technologies used](#technologies used)
+- [Description](#description)
+- [Technologies](#technologies)
 - [Screenshots](#screenshots)
 - [License](#license)
 - [Contributing](#contributing)

@@ -16,6 +16,8 @@ As a reader I would like to create account on a reading platform to document the
 * Socket.IO
 
 ## Screenshots
+![homepage](/client/public/Screenshoot.jpg)
+![scene](/client/public/Screenshoot2.jpg)
 
 ## License
 NA
